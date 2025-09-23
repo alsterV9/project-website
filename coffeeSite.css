@@ -1,0 +1,215 @@
+body{
+    margin: o;
+    padding: 0;
+    font: 20px sans-serif;
+}
+/* top part nav of page */
+
+nav{
+    background-color: rgb(42, 196, 28);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    
+
+    height: 80px;
+    width: 300px;
+}
+ul{
+    align-content: center;
+    
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font: 1.6em sans-serif;
+}
+li{
+    
+    display: inline;
+    padding: 10px 10px 0px 0px;
+
+}
+a{
+    text-decoration: none;
+    color: chocolate;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(112, 48, 3);
+}
+.navbtn{
+    background-color: chocolate;
+    border: none;
+    color: white;
+    font: 17px sans-serif;
+    height: 45px;
+    width: 120px;
+    border-radius: 5px;
+}
+.logobgd{
+    position: relative;
+    margin: 0px;
+    width: 98vw;
+    height: 800px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.banner{
+    position: relative;
+    width: 100%;
+}
+.bannerMod{
+    background-image: url(Untitled.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: -2;
+}
+.bannerTxt{
+    color: chocolate;
+    font-size: 2.5em;
+    font-weight: 900;
+    z-index: 3;
+    position: relative;
+    padding-top: 30px;
+    left: 50px;
+}
+.bannerBtn{
+    background-color: chocolate;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 750;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 20px;
+    left: 60px;
+    height: 70px;
+    width: fit-content;
+}
+
+/* mid content section  */
+
+.innerSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.coffeeImg{
+    height: 120px;
+    width: 160px;
+}
+
+.secondSection{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+    margin-top: 20px;
+}
+.h2 {
+    color: gold;
+}
+.sectionDiv{
+    height: min-content;
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px;
+    margin: 40px 2px;
+}
+.coffeeTile{
+    border: 2px solid rgba(255, 255, 255, 0);
+    box-shadow: 3px 4px 6px rgba(210, 105, 30, 0.281);
+    border-radius: 7px;
+    position: relative;
+    height: fit-content;
+    margin: 5px 10px;
+    padding: 10px;
+    width: 27vw;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.thirdSection{
+    width: 100%;
+    height: 550px;
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 20px;
+    padding: 20px 0px;
+    margin: 15px 0px;
+}
+.paragraph2{
+    position: relative;
+    height: auto;
+    width: 65%;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+.fourthsection{
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.starsImg{
+    height: 30px;
+    width: 150px;
+}
+.reviewImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.reviewSection{
+    padding: 50px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* footer section */
+  
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 20px;
+}
+.logoFooter{
+    background-color: white;
+    border-radius: 10px;
+    height: 80px;
+    width: 300px;
+    padding: 0px 10px;
+}   
+.footerLinks{
+    font-size: medium;
+}

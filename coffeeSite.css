@@ -1,26 +1,33 @@
 body{
-    margin: o;
-    padding: 0;
+    
+    padding: 0px auto;
     font: 20px sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* top part nav of page */
 
-nav{
-    background-color: rgb(42, 196, 28);
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 10px 16px 10px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: baseline;
-    height: 30px;
-    position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 1;
 }
 .logo{
     
-
+    position: relative;
+    top: 22px;
+    padding: 0;
+    margin: 0;
     height: 80px;
     width: 300px;
 }
@@ -54,18 +61,82 @@ a:hover{
     height: 45px;
     width: 120px;
     border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
 }
-.logobgd{
+.navbtn:hover{
+    background-color: rgb(197, 92, 16);
+    cursor: pointer;
+}
+/*.logobgd{
     position: relative;
     margin: 0px;
     width: 98vw;
     height: 800px;
     background-repeat: no-repeat;
     z-index: 2;
-}
-.banner{
+} */
+
+.navDropdown{
+    z-index: -1;
+    height: 60px;
+    width: 2px;
     position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dropImg{
+    display: none;
+    width: 120px;
+    height: 49px;
+}
+.dropdown{
+    display: none;
+    height: max-content;
+    width: 160px;
+    
+    text-align: left;
+    line-height: 1.5;
+    padding-right: 20px;
+    top: 40px;
+    left: -20px;
+    background-color: white;
+}
+/*.dropdown ul li:hover{
+    background-color: rgba(151, 149, 149, 0.205);
+} */
+.navDropdown:hover .dropdown{
+    display: block;
+    position: absolute;
+    
+    border-radius: 5px;
+    z-index: 1;
+}
+@media (max-width: 900px){
+    .navLinks{ display: none; }
+    .navDropdown{
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+    }
+    .dropImg{
+        display: block;
+    }
+    .reviewSection{
+        flex-direction: column;
+        
+        z-index: 2;
+    }
+    .fourthsection{
+        height: fit-content;
+        z-index: -1;
+    }
+}
+
+.firstSection{
+    margin-top: 110px;
 }
 .bannerMod{
     background-image: url(Untitled.png);
@@ -73,7 +144,7 @@ a:hover{
     background-size: cover;
     position: relative;
     height: 90vh;
-    width: 100%;
+    width: 100vw;
     z-index: -2;
 }
 .bannerTxt{
@@ -117,7 +188,7 @@ a:hover{
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+    width: 100vw;
     padding: 20px;
     margin-top: 20px;
 }
@@ -134,19 +205,19 @@ a:hover{
 }
 .coffeeTile{
     border: 2px solid rgba(255, 255, 255, 0);
-    box-shadow: 3px 4px 6px rgba(210, 105, 30, 0.281);
+    box-shadow: 4px 4px 6px rgba(210, 105, 30, 0.281);
     border-radius: 7px;
     position: relative;
     height: fit-content;
     margin: 5px 10px;
     padding: 10px;
-    width: 27vw;
+    width: 23vw;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
 .thirdSection{
-    width: 100%;
-    height: 550px;
+    width: 100vw;
+    height: fit-content;
     background-color: chocolate;
     color: white;
     display: flex;
@@ -163,12 +234,16 @@ a:hover{
     line-height: 1.6;
     font-size: larger;
 }
+.coffeePlantation{
+    width: 65%;
+}
 
 .fourthsection{
+    width: 100vw;
     height: 580px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    overflow: auto;
     text-align: center;
     padding: 60px 20px;
 }
@@ -194,7 +269,8 @@ a:hover{
 /* footer section */
   
 .footer{
-    width: 100%;
+    position: relative;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     background-color: black;
@@ -203,13 +279,28 @@ a:hover{
     padding: 30px 10px;
     margin-top: 20px;
 }
+.logoContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 340px;
+}
 .logoFooter{
     background-color: white;
     border-radius: 10px;
     height: 80px;
     width: 300px;
     padding: 0px 10px;
-}   
+} 
+
+h6{
+    position: absolute;
+    bottom: 0;
+}
+.footerSignup{
+    text-align: left;
+}
 .footerLinks{
     font-size: medium;
 }
